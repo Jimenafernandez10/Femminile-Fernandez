@@ -32,6 +32,7 @@ header{
     justify-content: space-around;
     flex-direction:row;
     min-width: 80vh;
+    border-bottom: #ddb7ab solid 1.7px;
    
 }
 
@@ -49,6 +50,10 @@ header label{
     height: 30px;
 }
 
+header label:hover{
+    cursor: pointer;
+}
+
 nav ul{
     list-style: none;
     text-align: center;
@@ -64,6 +69,10 @@ nav ul li{
     padding: 10px;
     background-color:#ddb7ab;
     border-radius: 18px;
+}
+
+nav ul li:hover{
+   transform: scale(1.1);
 }
 
 nav ul li a{
@@ -97,11 +106,12 @@ nav li a:hover{
                         "producto producto producto"
 }
 
-.producto{
+.producto:hover{
     margin: 10px;
     padding: 10px;
     float: left;
     width: auto;
+    box-shadow: 2px 5px 8px grey;
     grid-area: producto;
     
 }
@@ -121,6 +131,19 @@ nav li a:hover{
     text-transform: capitalize;
     font-weight: bold;
 }
+.boton:hover{
+    font-size: 1rem;
+    background-color: #ddb7ab;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid black 1.5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+
+}
+
 
 .fondo{
     text-align: center;
@@ -174,6 +197,13 @@ nav li a:hover{
     border: solid black 1px;
     margin: 10px;
 }
+
+.contorno:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 8px grey;
+}
+
+
 .producto{
     margin: 10px;
     padding: 10px;
@@ -317,10 +347,6 @@ nav li a:hover{
     background-color: #ede9e5;
     text-align: center;
     line-height: 1.8;
-      
+    
+       
 }
-
-
-
-
-
