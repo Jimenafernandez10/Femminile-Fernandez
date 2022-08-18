@@ -84,6 +84,22 @@ nav li a:hover{
     color: white;
 }
 
+/* css de boostrap*/
+
+.dropdown-menu{
+    background-color: #daf2f0;
+}
+
+.btn{
+    background-color: #ddb7ab;
+
+}
+
+.list-group-item{
+    background-color:#ddb7ab;
+    margin-top: 10px;
+}
+
 .index{
     background-color: #ede9e5;
     text-align: center;
