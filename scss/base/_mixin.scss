@@ -1,0 +1,6 @@
+// mixin
+
+@mixin imagenes ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}

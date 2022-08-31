@@ -1,3 +1,9 @@
+main .producto1:hover, main .producto2:hover, main .producto3:hover, main .producto4:hover, main .producto5:hover, main .producto6:hover {
+  float: left;
+  width: auto;
+  box-shadow: 2px 5px 8px grey;
+  grid-area: producto; }
+
 header {
   width: 100%;
   background-color: #daf2f0;
@@ -58,46 +64,22 @@ main {
     align-items: center; }
   main .producto1:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .producto2:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .producto3:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .producto4:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .producto5:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .producto6:hover {
     margin: 10px;
-    padding: 10px;
-    float: left;
-    width: auto;
-    box-shadow: 2px 5px 8px grey;
-    grid-area: producto; }
+    padding: 10px; }
   main .boton {
     border: solid black 1.5px;
     text-transform: capitalize;
@@ -138,7 +120,7 @@ footer {
   footer nav a:hover {
     color: white; }
   footer .logo {
-    padding: 20px; }
+    padding: 10px; }
   footer .instagram {
     padding: 10px; }
 
@@ -186,7 +168,7 @@ footer {
   .fondo {
     min-width: 95vh; }
   .css-producto {
-    background-color: #ede9e5;
+    background-color: #daf2f0;
     text-align: center;
     align-items: center;
     line-height: 1.8;
@@ -199,7 +181,7 @@ footer {
 
 @media screen and (min-width: 791px) {
   .css-producto {
-    background-color: #ede9e5;
+    background-color: #daf2f0;
     text-align: center;
     align-items: center;
     line-height: 1.8;

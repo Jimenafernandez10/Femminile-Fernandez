@@ -1,10 +1,13 @@
-@import "utilities/variables";
+@import "base/variables";
+@import "base/listas";
+@import "base/mixin";
+@import "base/extend";
 
 // NESTING
 
 header{
     width: 100%;
-    background-color: $color-menu;
+    background-color: nth($colores, 1 );
     position: sticky;
     top: 0;
     font-size: 1rem;
@@ -13,7 +16,7 @@ header{
     justify-content: space-around;
     flex-direction:row;
     min-width: 80vh;
-    border-bottom: $color-boton solid 1.7px;
+    border-bottom: nth($colores, 2) solid 1.7px;
      h1{
             text-transform: uppercase;
             font-family: 'Cormorant SC', serif; 
@@ -33,14 +36,14 @@ header{
                     display: inline-block;
                     margin: 10px;
                     padding: 10px;
-                    background-color:$color-boton;
+                    background-color:nth($colores, 2);
                     border-radius: 18px;
                 }
                 li:hover{
                     transform: scale(1.1);
                 }
                 a{
-                    color: $color-tipografia;
+                    color: nth($colores, 4 );
                     text-decoration: none;
                  }
                 a:hover{
@@ -53,7 +56,7 @@ header{
 }
 
 main{
-        background-color: $color-fondo;
+        background-color: nth($colores, 3 );
         text-align: center;
         line-height: 1.8;
         display: flex;
@@ -81,52 +84,28 @@ main{
     }
 
     .producto1:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
     .producto2:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
     .producto3:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
     .producto4:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
     .producto5:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
     .producto6:hover{
-        margin: 10px;
-        padding: 10px;
-        float: left;
-        width: auto;
-        box-shadow: 2px 5px 8px grey;
-        grid-area: producto;
+        @include imagenes (10px, 10px);
+        @extend %productos;
     }
 
     .boton{
@@ -154,6 +133,7 @@ footer{
     min-width: 95vh;
     border-top: $color-boton solid 1.7px;
     
+    
     nav{
         ul{
             list-style: none;
@@ -168,7 +148,7 @@ footer{
             display: inline-block;
             margin: 10px;
             padding: 10px;
-            background-color:$color-boton;
+            background-color:nth($colores, 2);
             border-radius: 18px;
         }
 
@@ -177,7 +157,7 @@ footer{
         }
 
         a{
-            color: $color-tipografia;
+            color: nth($colores, 4 );
             text-decoration: none;
         }
 
@@ -188,7 +168,7 @@ footer{
     
 
     .logo{
-        padding: 20px;
+        padding: 10px;
     }
 
     .instagram{
@@ -311,7 +291,7 @@ footer{
     }
 
     .css-producto{
-        background-color: $color-fondo;
+        background-color: nth($colores, 1 );
         text-align: center;
         align-items: center;
         line-height: 1.8;
@@ -332,7 +312,7 @@ footer{
 
 @media screen and (min-width: 791px) {
     .css-producto{
-        background-color: $color-fondo;
+        background-color: nth($colores, 1 );
         text-align: center;
         align-items: center;
         line-height: 1.8;
