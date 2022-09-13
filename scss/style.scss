@@ -9,17 +9,17 @@ header{
     background-color: nth($colores, 1 );
     position: sticky;
     top: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction:row;
-    min-width: 80vh;
+    //min-width: 80vh;
     border-bottom: nth($colores, 2) solid 1.7px;
      h1{
             text-transform: uppercase;
             font-family: 'Cormorant SC', serif; 
-            font-size: 30px;
+            font-size: 40px;
             text-decoration: none;
         }
         nav{
@@ -60,7 +60,7 @@ main{
         line-height: 1.8;
         display: flex;
         flex-direction: column; 
-        min-width: 95vh;
+        //min-width: 95vh;
 
         
     section{
@@ -82,6 +82,8 @@ main{
         margin-bottom:15px;
         align-items: center;
     }
+
+    
 
     .producto1:hover{
         @include imagenes (10px, 10px);
@@ -129,6 +131,10 @@ main{
         margin: 20px;
         padding: 30px;
     }
+
+    p{
+        font-size: 18px;
+    }
 }
 
 footer{
@@ -136,7 +142,7 @@ footer{
     text-align: center;
     background-color: nth($colores, 1 );
     border-top: nth($colores, 2 ) solid 1.7px;
-    min-width: 100pv;
+    font-size: 1.2rem;
 
     
     nav{
@@ -184,9 +190,11 @@ footer{
     .instagram{
         padding: 10px;
     }
+
+    
 }
 
-@media screen and (min-width: 791px) {
+@media (min-width: 791px) {
     header label{
         display: none;
     }
@@ -194,7 +202,7 @@ footer{
   
 }
 
-@media screen and (max-width: 412px) {
+@media (max-width: 375px) {
     header label{
         display: block;
     }
@@ -225,7 +233,7 @@ footer{
  
 }
 
-@media screen and (max-width: 790px) {
+@media (max-width: 790px) {
     .producto{
 
         max-width: 95vw;
@@ -233,31 +241,19 @@ footer{
     }
 
     .home{
-
         display: grid;
-
         grid-template-areas: 
-
                             "producto1"
-
                             "producto2"
-
                             "producto3"
-
                             "producto4"
-
                             "producto5"
-
-                            "producto6";
-
-                                              
-
+                            "producto6";                                           
     }
 
     .producto-1{
-
+        
         grid-area: producto1;
-
     }
 
     .producto-2{
@@ -291,27 +287,35 @@ footer{
     }
         
 
-    .Menu{
-        min-width: 95vh;
-    }
+    // .Menu{
+    //     min-width: 95vh;
+    // }
 
 
-    .fondo{
-        min-width: 95vh;
+    // .fondo{
+    //     min-width: 95vh;
+    // }
+
+    footer {
+        nav{
+            ul{
+                flex-direction: column;
+            }
+        }
     }
 
 } 
 
 
-@media screen and (min-width: 791px) {
+// @media (min-width: 791px) {
 
         
-    .Menu{
-        min-width: 95vh;
-     }
+//     .Menu{
+//         min-width: 95vh;
+//      }
     
     
-    .fondo{
-        min-width: 95vh;
-    }
-}
+//     .fondo{
+//         min-width: 95vh;
+//     }
+// }
