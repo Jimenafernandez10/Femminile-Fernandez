@@ -135,7 +135,7 @@ footer {
   header label {
     display: none; } }
 
-@media (max-width: 375px) {
+@media (max-width: 370px) {
   header label {
     display: block; }
   .menu-horizontal {
