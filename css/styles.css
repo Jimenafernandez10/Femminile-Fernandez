@@ -61,6 +61,11 @@ main {
     margin-top: 15px;
     margin-bottom: 15px;
     align-items: center; }
+  main .formulario {
+    margin: 10px; }
+  main .btn {
+    background-color: #ddb7ab;
+    margin: 10px; }
   main .producto1:hover {
     margin: 10px;
     padding: 10px; }
@@ -135,7 +140,7 @@ footer {
   footer .instagram {
     padding: 10px; }
 
-@media (min-width: 791px) {
+@media (min-width: 991px) {
   header label {
     display: none; } }
 

@@ -84,8 +84,15 @@ main{
         align-items: center;
     }
 
+    .formulario{
+        margin: 10px;
+    }
+    .btn{
+        background-color: nth($colores, 2 );
+        margin: 10px;
+            
+    }
     
-
     .producto1:hover{
         @include imagenes (10px, 10px);
         @extend %productos;
@@ -198,7 +205,7 @@ footer{
     
 }
 
-@media (min-width: 791px) {
+@media (min-width: 991px) {
     header label{
         display: none;
     }
@@ -238,6 +245,7 @@ footer{
 }
 
 @media (max-width: 790px) {
+
     .producto{
 
         max-width: 95vw;
@@ -290,7 +298,6 @@ footer{
 
     }
         
-
     // .Menu{
     //     min-width: 95vh;
     // }
