@@ -5,6 +5,7 @@ main .producto1:hover, main .producto2:hover, main .producto3:hover, main .produ
   grid-area: producto; }
 
 header {
+  z-index: 999;
   width: 100%;
   background-color: #daf2f0;
   position: sticky;
